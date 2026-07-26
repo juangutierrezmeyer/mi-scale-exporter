@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net9.0-android</TargetFrameworks>
+		<TargetFrameworks>net10.0-android</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
 		<OutputType>Exe</OutputType>
@@ -81,18 +81,19 @@
 
 	
 	<ItemGroup>
-  		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.81" />
-  		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="9.0.81" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.90" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="10.0.90" />
+		<PackageReference Include="Microsoft.Maui.Essentials" Version="10.0.90" />
 	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="Autofac" Version="8.3.0" />
 	  <PackageReference Include="Autofac.Extras.CommonServiceLocator" Version="6.1.0" />
-	  <PackageReference Include="CommunityToolkit.Maui" Version="12.1.0" />
+	  <PackageReference Include="CommunityToolkit.Maui" Version="15.0.0" />
 	  <PackageReference Include="MiScaleBodyComposition" Version="1.0.12" />
-	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
 	  <PackageReference Include="NLog" Version="5.3.1" />
 	  <PackageReference Include="NLog.Extensions.Logging" Version="5.3.9" />
-	  <PackageReference Include="Plugin.AdMob" Version="2.3.2-beta.7" />
+	  <PackageReference Include="Plugin.AdMob" Version="10.0.90" /> 
 	  <PackageReference Include="Plugin.BLE" Version="3.2.0-beta.1" />
 	  <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
 	  <PackageReference Include="YetAnotherGarminConnectClient" Version="0.0.17" />
